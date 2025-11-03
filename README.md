@@ -1,70 +1,74 @@
-# React.js and Tailwind CSS Assignment
+# React Task Manager App
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+A responsive React application built with **Vite** and **Tailwind CSS** demonstrating:
 
-## Assignment Overview
+- Component architecture with reusable UI components (`Button`, `Card`, `Navbar`, `Footer`, `Layout`)
+- State management using `useState`, `useEffect`, and `useContext`
+- Custom hooks for localStorage persistence
+- API integration with **JSONPlaceholder**
+- Responsive design with Tailwind CSS and light/dark theme support
+- Animations and transitions for interactive elements
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+---
 
-## Getting Started
+## Live Demo
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+Check the app live at: **[plp-week-3-react-project.vercel.app](#)**
 
-## Files Included
+---
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+## Features
 
-## Requirements
+- **Task Manager**
+  - Add, complete, delete tasks
+  - Filter tasks (All, Active, Completed)
+  - Persist tasks using `useLocalStorage`
+- **Theme Switcher**
+  - Toggle between light and dark modes using context
+- **API Integration**
+  - Fetch posts from JSONPlaceholder
+  - Search and filter posts
+  - Pagination for posts
+- **Responsive Design**
+  - Mobile, tablet, and desktop friendly
+- **Reusable Components**
+  - Buttons, cards, navbar, footer, layout wrapper
+- **Animations**
+  - Fade-in and slide-up animations
+  - Hover transitions on buttons and cards
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+---
 
 ## Project Structure
-
-```
 src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
-```
+├── components/
+│ ├── Button.jsx
+│ ├── Card.jsx
+│ ├── Footer.jsx
+│ ├── Layout.jsx
+│ ├── Navbar.jsx
+│ └── TaskManager.jsx
+├── context/
+│ └── ThemeContext.jsx
+├── hooks/
+│ └── useLocalStorage.js
+├── pages/
+│ ├── Home.jsx
+│ ├── About.jsx
+│ ├── Posts.jsx
+│ └── NotFound.jsx
+├── utils/
+│ └── api.js
+├── App.jsx
+└── main.jsx
 
-## Submission
+---
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+## ⚡ Technologies Used
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
-
-## Resources
-
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router](https://reactrouter.com/)
+- JSONPlaceholder API for demo data
+- JavaScript ES6+ features
