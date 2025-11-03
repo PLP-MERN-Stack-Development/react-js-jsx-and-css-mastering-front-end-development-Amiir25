@@ -1,14 +1,14 @@
-import React from "react";
-import Navbar from "./components/Navbar";
+import { Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
-import { Route, Routes } from "react-router";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
-
   return (
-    <div>
+    <ThemeProvider>
       <Navbar />
       <div className="p-6">
         <Routes>
@@ -17,8 +17,9 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
-    </div>
-  )
+      <Footer />
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
