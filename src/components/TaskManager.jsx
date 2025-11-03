@@ -60,20 +60,24 @@ const TaskManager = () => {
         <p className="text-gray-500 text-center">No tasks found</p>
       ) : (
         <ul className="space-y-2">
-          {filteredTasks.map(task => (
+        {filteredTasks.map((task) => (
             <li
-              key={task.id}
-              className="flex justify-between items-center bg-gray-100 dark:bg-gray-800 p-3 rounded-lg"
+            key={task.id}
+            className="flex justify-between items-center bg-gray-100 dark:bg-gray-800 p-3 rounded-lg animate-slideUp transition-all hover:scale-[1.01]"
             >
-              <span
+            <span
                 onClick={() => toggleComplete(task.id)}
-                className={`flex-1 cursor-pointer ${task.completed ? "line-through text-gray-400" : ""}`}
-              >
+                className={`flex-1 cursor-pointer ${
+                task.completed ? "line-through text-gray-400" : "hover:text-blue-500"
+                }`}
+            >
                 {task.text}
-              </span>
-              <Button variant="danger" onClick={() => deleteTask(task.id)}>Delete</Button>
+            </span>
+            <Button variant="danger" onClick={() => deleteTask(task.id)}>
+                Delete
+            </Button>
             </li>
-          ))}
+        ))}
         </ul>
       )}
     </Card>
