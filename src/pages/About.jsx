@@ -1,12 +1,16 @@
-import React from 'react'
+import Layout from "../components/Layout";
+import Card from "../components/Card";
 
 const About = () => {
-  return (
-    <div>
-        <h2 className="text-2xl font-semibold">About Us 📘</h2>
-        <p className="text-gray-600 mt-2">This is the about page.</p>
-    </div>
-  )
+    return (
+        <Layout>
+            <Card title="About This App">
+            <p className="text-gray-600">
+                This app demonstrates reusable React components, props, and layout management.
+            </p>
+            </Card>
+        </Layout>
+    )
 }
 
-export default About
+export default About;
