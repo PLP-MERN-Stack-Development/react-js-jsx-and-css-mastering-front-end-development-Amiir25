@@ -39,31 +39,6 @@ Check the app live at: **[plp-week-3-react-project.vercel.app/](https://plp-week
 
 ---
 
-## Project Structure
-src/
-├── components/
-│ ├── Button.jsx
-│ ├── Card.jsx
-│ ├── Footer.jsx
-│ ├── Layout.jsx
-│ ├── Navbar.jsx
-│ └── TaskManager.jsx
-├── context/
-│ └── ThemeContext.jsx
-├── hooks/
-│ └── useLocalStorage.js
-├── pages/
-│ ├── Home.jsx
-│ ├── About.jsx
-│ ├── Posts.jsx
-│ └── NotFound.jsx
-├── utils/
-│ └── api.js
-├── App.jsx
-└── main.jsx
-
----
-
 ## ⚡ Technologies Used
 
 - [React](https://reactjs.org/)
