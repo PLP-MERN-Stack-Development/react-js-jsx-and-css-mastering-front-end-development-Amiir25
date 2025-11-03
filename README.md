@@ -13,7 +13,7 @@ A responsive React application built with **Vite** and **Tailwind CSS** demonstr
 
 ## Live Demo
 
-Check the app live at: **[plp-week-3-react-project.vercel.app](#)**
+Check the app live at: **[https://plp-week-3-react-project.vercel.app/](#)**
 
 ---
 
